@@ -1,0 +1,21 @@
+[project]
+name = "matcha-218"
+version = "0.1.0"
+description = "matcha#218"
+readme = "README.md"
+requires-python = ">=3.9, <4.0"
+dependencies = ["nonebot-plugin-alconna>=0.54.1"]
+
+[tool.nonebot]
+adapters = [
+  { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+]
+plugins = []
+plugin_dirs = ["matcha_218/plugins"]
+builtin_plugins = []
+
+[tool.basedpyright]
+typeCheckingMode = "standard"
+
+[dependency-groups]
+dev = ["nonebot-adapter-onebot>=2.1.0", "nonebot2[fastapi]>=2.4.1"]
